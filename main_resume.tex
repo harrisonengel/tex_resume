@@ -1,0 +1,419 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+%----------------------------------------------------------------------------------------
+% DEFAULT
+%----------------------------------------------------------------------------------------
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Futura}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\definecolor{boxcolor}{HTML}{0266C8}
+\definecolor{section}{HTML}{1B3F8B}
+%----------------------------------------------------------------------------------------
+
+
+% Company Specific Settings
+%----------------------------------------------------------------------------------------
+% Google
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Futura}
+%\definecolor{gblue}{HTML}{0266C8}
+%\definecolor{gred}{HTML}{F90101}
+%\definecolor{gyellow}{HTML}{F2B50F}
+%\definecolor{ggreen}{HTML}{00933B}
+%\definecolor{boxcolor}{HTML}{0266C8}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%Apple
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue Light}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Thin}
+%\definecolor{section}{HTML}{A5ADB0} %Lightest 
+%\definecolor{section}{HTML}{65737E}
+%\definecolor{section}{HTML}{4F5B66}
+%\definecolor{section}{HTML}{000000} % Darkest
+%\definecolor{boxcolor}{HTML}{343D46}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%Microsoft
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Futura}
+%\definecolor{msgreen}{HTML}{7CBB00}
+%\definecolor{msred}{HTML}{F65314}
+%\definecolor{msblue}{HTML}{00A1F1}
+%\definecolor{msyellow}{HTML}{FFBB00}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% Amazon
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Arial}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Thin}
+%\definecolor{section}{HTML}{FF9900}
+%\definecolor{boxcolor}{HTML}{FF9900}
+%\definecolor{defaulttext}{HTML}{000000}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% Facbook
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Lucida Grande}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Thin}
+%\definecolor{section}{HTML}{3B5998}
+%\definecolor{boxcolor}{HTML}{0E1F5B}
+%\definecolor{defaulttext}{HTML}{0E1F5B}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% Tesla
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Lucida Grande}
+%\setmonofont[Scale=MatchLowercase,Mapping=tex-text]{TeslaNikolaCaps}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Light}
+%\definecolor{section}{HTML}{CC0000}
+%\definecolor{boxcolor}{HTML}{000000}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% VM Ware
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Lucida Grande}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Light}
+%\definecolor{section}{HTML}{880024}
+%\definecolor{boxcolor}{HTML}{574319}
+%\definecolor{vmbrown}{HTML}{574319}
+%\definecolor{vmred}{HTML}{880024}
+%\definecolor{vmorange}{HTML}{F8981D}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% Intel
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Lucida Grande}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Light}
+%\definecolor{section}{HTML}{0000FF}
+%\definecolor{boxcolor}{HTML}{000000}
+%\definecolor{vmbrown}{HTML}{574319}
+%\definecolor{vmred}{HTML}{880024}
+%\definecolor{vmorange}{HTML}{F8981D}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% Ebay
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Lucida Grande}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Light}
+%\definecolor{section}{HTML}{FE0000}
+%\definecolor{boxcolor}{HTML}{000000}
+%\definecolor{ebred}{HTML}{FE0000}
+%\definecolor{ebblue}{HTML}{000099}
+%\definecolor{ebgreen}{HTML}{98CB00}
+%\definecolor{ebyellow}{HTML}{FFCC00}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% Oracle
+%----------------------------------------------------------------------------------------
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Futura}
+%\setromanfont[Mapping=tex-text]{Helvetica Neue Light}
+%\definecolor{section}{HTML}{FF0000}
+%\definecolor{boxcolor}{HTML}{FF0000}
+%\definecolor{defaulttext}{HTML}{000000}
+%----------------------------------------------------------------------------------------
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{defaulttext} % Sets the default text color as defined above
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily \Huge Harrison Donald Engel}\\ 
+% DEFAULT
+{\color{section} {\sffamily \Large Resume}\\[15pt]\par} 
+% GOOGLE
+%{\color{headings} {\sffamily\Large \color{gblue}{R}\color{gred}{e}\color{gyellow}{s}\color{gblue}{u}\color{ggreen}{m}\color{gred}{e}}\\[15pt]\par}
+% AMAZON
+% {\color{section} {\sffamily \Large resume}\\[15pt]\par} 
+% TESLA
+%{\color{section} {\ttfamily \Large resume}\\[15pt]\par} 
+
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+% FOR GOOGLE
+%\section{\color{gblue} \sffamily Professional Experience} 
+% FOR APPLE
+%\section{\color{section} \sffamily Professional Experience} 
+% FOR Microsoft
+%\section{\color{msred} \sffamily Professional Experience}
+% FOR Ebay
+%\section{\color{ebred} \sffamily Professional Experience}
+%Default
+\section{\color{section} \sffamily Professional Experience}
+\hfill \\
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+{\raggedright
+\\
+\large \textsc{\textbf{Google}} \hfill \small{\textsc{May - Present} }}\\
+\small{Software Engineering Intern}
+\begin{itemize}
+\normalsize{
+\item Developed a Python Nosetest plugin to integrated the Cast Ready Test suite with Android Partner Front End web portal.
+\item Achieved above 95\% unit test coverage.
+\item Currently building a query based test framework for Google Home.
+\end{itemize}
+ } 
+\\
+\hfill
+{\raggedright
+
+\large \textsc{\textbf{Fidelity Investments}}  \hfill \small{\textsc{June - December 2015} }\\
+Software Engineering Intern}
+\begin{itemize}
+\normalsize{
+\item Developed, tested, and deployed functionality that allows teams to bypass the application's hours of operation and validate production installs. 
+\item Refactored the main application with a focus on maintainability and testability, which increased the applications internal compliance rating from 71\% to 91\% 
+\item Won the \textsc{Fidelity} Intern Summit competition for research and a presentation on a Blockchain based stock exchange. 
+\end{itemize} } 
+\\
+\hfill
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedright
+
+\large \textsc{\textbf{Thumbtechs}} \hfill \small{\textsc{Aug 2014 -- June 2015}}\\
+Intern, Website and Salesforce Development}
+\normalsize{
+\begin{itemize}
+	\item Refactored legacy code by implementing Singleton, Command, and Method Template patterns which resulted in a  reduction in legacy bugs and more efficient development. 
+	\item	Developed HTML, CSS, and Javascript code for a new responsive website currently online.
+\end{itemize}
+}\\
+\hfill
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedright \large \textsc{\textbf{The Web Showroom}} \hfill \small{\textsc{Summer 2014}}\\
+Intern, Sydney Australia}
+\normalsize{
+\begin{itemize}
+	\item Created reports used by the sales team in pitches, which resulted in acquiring multiple new clients.
+	\item Selected from over 5000 IES Abroad students to speak at a conference in New Orleans about interning abroad.
+\end{itemize}
+}\\
+\hfill
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+% FOR APPLE
+%\fcolorbox{section}{white}{
+% Default
+\fcolorbox{boxcolor}{white}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 3601 South Drive, Fort Worth, Texas 76109 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +1 \(402\) 960 3620 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:hengel1993@gmail.com}{hengel1993@gmail.com} \\ % Email address
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+% FOR GOOGLE 
+%\section{\color{gred} \sffamily Education}
+% FOR APPLE
+%\section{\color{section} \sffamily  Education}
+% FOR MICROSOFT
+%\section{\color{msgreen} \sffamily Education}
+% FOR EBAY
+%\section{\color{ebgreen} \sffamily Education}
+% DEFAULT
+\section{\color{section} \sffamily Education} 
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+\begin{tabular}{l r} 
+\textbf{Texas Christian University} & 2012 -- \textsc{Present} \\ 
+\end{tabular} \hfill \\
+\begin{tabular}{l} 
+\textit{Bachelor of Science} \\ \hfill \\
+\textsc{Computer Science Major}\\ \hfill \\
+\textsc{Business and Chemistry Minor}  \\ \hfill \\
+\end{tabular}
+\begin{tabular}{l r}
+\textsc{Overall GPA: 3.77} &  \textsc{Major GPA: 3.97} \\
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	Academic Involvement
+%----------------------------------------------------------------------------------------
+%FOR GOOGLE
+%\section{\color{gyellow}Academic/Volunteer Involvement}
+% FOR APPLE
+%\section{\color{section} \sffamily Academic/Volunteer Involvement}
+%FOR MICROSOFT
+%\section{\color{msblue} \sffamily Academic/Volunteer Involvement}
+%FOR MICROSOFT
+%\section{\color{msblue} \sffamily Academic/Volunteer Involvement}
+% DEFAULT
+\section{\color{section} \sffamily Extracurricular Involvement}
+\begin{tabular}{l}
+	Vice President of TCU's Computer Science Society \\ \hfill \\
+	Upsilon Pi Epsilon Honors Society Officer \\ \hfill \\
+	Computer Science Tutor \\ \hfill \\
+	TA and Grader for Computer Science Courses \\ \hfill \\ 
+	Global Medical Training in the Dominican Republic \\ \hfill \\
+	Medical and Orphanage work in Haiti \\ \hfill \\
+	Rural Construction in Mexico \\ \hfill \\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	Programming Language Experience
+%----------------------------------------------------------------------------------------
+
+% FOR GOOGLE
+%\section{\color{ggreen} \sffamily Programming Languages} 
+%FOR APPLE
+%\section{\color{section}\sffamily  Programming Language Experience} 
+% FOR MICROSOFT
+%\section{\color{msyellow} \sffamily Programming Language Experience}
+% FOR MICROSOFT
+%\section{\color{ebyellow} \sffamily Programming Language Experience}
+%DEFAULT
+\section{\color{section} \sffamily Programming Language Experience} 
+
+\begin{tabular}{l r}
+Proficient
+& \textsc{Java}, \textsc{Python} \\ 
+Experienced
+& \textsc{C/C++}, \textsc{HTML}, \textsc{CSS}, \\
+& \textsc{MySQL, SOQL} , \textsc{APEX}\\
+Hobby
+& \textsc{Haskell}, \textsc{OCaml}
+\end{tabular}\\
+
+%----------------------------------------------------------------------------------------
+%	Technology Expeience
+%----------------------------------------------------------------------------------------
+% FOR GOOGLE
+%\section{\color{gblue} \sffamily Technology Experience}
+% FOR APPLE
+%\section{\color{section} \sffamily Technology Experience}
+% FOR MICROSOFT
+%\section{\color{msred} \sffamily Technology Experience}
+% FOR EBAY
+%\section{\color{ebred} \sffamily Technology Experience}
+% DEFAULT
+\section{\color{section} \sffamily Technology Experience}
+\begin{tabular}{lr}
+OS: & Linux, OS X \\
+Source Control: & Git \\
+Testing: & Python Unittest, Java JUnit \\
+MVC: & Python Django, Java Spring \\
+\end{tabular}
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
